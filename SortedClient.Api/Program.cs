@@ -4,8 +4,20 @@ using SortedClient.Application.Concrete;
 using SortedClient.Application.Interface;
 using System.Reflection;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin() 
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -26,15 +38,10 @@ builder.Services.AddSwaggerGen(c =>
         
     });
 
-    c.AddServer(new OpenApiServer
-    {
-        Url = "http://localhost:3000",
-        Description = "Rainfall Api",
-    });
-
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
+builder.Services.AddAuthorization();
 
 builder.Services.AddTransient<IMeasurementStationService, MeasurementStationService>();
 
@@ -47,6 +54,8 @@ builder.Services.AddLogging();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -58,8 +67,8 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Rainfall Api 1.0");
     });
 }
-
 app.UseHttpsRedirection();
+app.UseCors(MyAllowSpecificOrigins); 
 
 app.UseAuthorization();
 

@@ -33,7 +33,7 @@ namespace SortedClient.Application.Concrete
             if (response.IsSuccessStatusCode)
             {
                 string jsonString = response.Content.ReadAsStringAsync().Result;
-                var deserializeJson = JsonConvert.DeserializeObject<Stations>(jsonString);
+                var deserializeJson = JsonConvert.DeserializeObject<StationDto>(jsonString);
 
                 if (deserializeJson != null)
                 {

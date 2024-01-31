@@ -51,12 +51,4 @@ namespace SortedClient.Domain.Models
         [JsonProperty("wiskiID")]
         public string WiskiID { get; set; } = string.Empty;
     }
-
-    /// <summary>
-    /// Station model is used to for deserializing jsonstring to object
-    /// </summary>
-    public class Stations
-    {
-        public List<Items> Items { get; set; } = new List<Items>();
-    }
 }
