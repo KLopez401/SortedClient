@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SortedClient.Application.Concrete;
+using SortedClient.Application.Dtos;
 using SortedClient.Application.Interface;
 using SortedClient.Domain.Models;
 
@@ -38,9 +38,9 @@ namespace SortedClient.Api.Controllers
         [ProducesResponseType(typeof(IDictionary<string, string>), 400)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> Stations()
+        public async Task<IActionResult> Stations([FromQuery] MeasureStationQueryDto stationQueryDto)
         {
-            var items = await _measurementStationService.GetMeasurementStations();
+            var items = await _measurementStationService.GetMeasurementStations(stationQueryDto);
             return Ok(items);
         }
     }
