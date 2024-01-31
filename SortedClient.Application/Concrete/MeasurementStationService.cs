@@ -45,7 +45,12 @@ namespace SortedClient.Application.Concrete
 
             return items;
         }
-
+        /// <summary>
+        /// method to filter items that pass items and stationquerydto value
+        /// </summary>
+        /// <param name="items"></param>
+        /// <param name="stationQueryDto"></param>
+        /// <returns>filtered items</returns>
         private IEnumerable<Items> FilterItems (List<Items> items, MeasureStationQueryDto stationQueryDto)
         {
             if (items.Any())

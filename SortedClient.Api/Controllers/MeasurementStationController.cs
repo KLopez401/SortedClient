@@ -8,9 +8,9 @@ namespace SortedClient.Api.Controllers
     /// <summary>
     /// Controller for measurementstation 
     /// </summary>
-    /// <description>
+    /// <remarks>
     /// includes all the specified logic in rainfall measurement
-    /// </description>
+    /// </remarks>
     [Route("api/rainfall/id/[action]/")]
     [ApiController]
     public class MeasurementStationController : ControllerBase
@@ -27,12 +27,9 @@ namespace SortedClient.Api.Controllers
         /// <summary>
         /// All rainfall measurement stations
         /// </summary>
-        /// <description> 
+        /// <remarks>
         /// Retrieve the latest readings for measurement stations
-        /// </description>
-        /// <tags>
-        /// Rainfall
-        /// </tags>
+        /// </remarks>
         [HttpGet()]
         [ProducesResponseType(typeof(Items), 200)]
         [ProducesResponseType(typeof(IDictionary<string, string>), 400)]

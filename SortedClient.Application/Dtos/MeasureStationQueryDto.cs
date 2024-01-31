@@ -1,5 +1,11 @@
 ﻿namespace SortedClient.Application.Dtos
 {
+    /// <summary>
+    /// a data transfer object for station query
+    /// </summary>
+    /// <remarks>
+    /// used to transfer data from query filter request to the service
+    /// </remarks>
     public class MeasureStationQueryDto
     {
         public string Qualifier { get; set; } = string.Empty;

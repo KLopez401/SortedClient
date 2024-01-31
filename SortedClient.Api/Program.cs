@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using SortedClient.Api.Exceptions;
 using SortedClient.Application.Concrete;
@@ -26,6 +24,12 @@ builder.Services.AddSwaggerGen(c =>
         },
         Description = "An API which provides rainfall reading data",
         
+    });
+
+    c.AddServer(new OpenApiServer
+    {
+        Url = "http://localhost:3000",
+        Description = "Rainfall Api",
     });
 
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
