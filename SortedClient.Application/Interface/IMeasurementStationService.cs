@@ -15,6 +15,6 @@ namespace SortedClient.Application.Interface
         /// <summary>
         /// Get Measurement station method
         /// </summary>
-        IEnumerable<Items> GetMeasurementStations();
+        Task<IEnumerable<Items>> GetMeasurementStations();
     }
 }

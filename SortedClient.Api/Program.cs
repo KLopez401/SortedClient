@@ -34,7 +34,11 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddTransient<IMeasurementStationService, MeasurementStationService>();
 
-builder.Services.AddHttpClient<MeasurementStationService>();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("Github", httpclient =>
+{
+    httpclient.BaseAddress = new Uri("https://environment.data.gov.uk/flood-monitoring/");
+});
 builder.Services.AddLogging();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

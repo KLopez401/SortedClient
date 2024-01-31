@@ -38,9 +38,9 @@ namespace SortedClient.Api.Controllers
         [ProducesResponseType(typeof(IDictionary<string, string>), 400)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult Stations()
+        public async Task<IActionResult> Stations()
         {
-            var items = _measurementStationService.GetMeasurementStations();
+            var items = await _measurementStationService.GetMeasurementStations();
             return Ok(items);
         }
     }

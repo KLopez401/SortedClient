@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using SortedClient.Application.Interface;
 using SortedClient.Domain.Models;
+using System.Net.Http;
 
 namespace SortedClient.Application.Concrete
 {
@@ -9,9 +10,8 @@ namespace SortedClient.Application.Concrete
     /// </summary>
     public class MeasurementStationService : IMeasurementStationService
     {
-        Uri baseUri = new Uri("https://environment.data.gov.uk/flood-monitoring/");
-        private readonly HttpClient _client;
-        public MeasurementStationService(HttpClient httpClient)
+        private readonly IHttpClientFactory _client;
+        public MeasurementStationService(IHttpClientFactory httpClient)
         {
             _client = httpClient;
         }
@@ -22,11 +22,12 @@ namespace SortedClient.Application.Concrete
         /// <returns>
         /// returns the reading of all data from the rainfall api
         /// </returns>
-        public IEnumerable<Items> GetMeasurementStations()
+        public async Task<IEnumerable<Items>> GetMeasurementStations()
         {
             var items = new List<Items>();
-            string urlEndpoint = baseUri.ToString() + "id/stations?parameter=rainfall";
-            HttpResponseMessage response = _client.GetAsync(urlEndpoint).Result;
+            var httpClient = _client.CreateClient("Github");
+
+            HttpResponseMessage response = await httpClient.GetAsync("id/stations?parameter=rainfall");
 
             if (response.IsSuccessStatusCode)
             {
