@@ -1,0 +1,11 @@
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\bin\Debug\net8.0\SortedClient.Infrastructure.deps.json
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\bin\Debug\net8.0\SortedClient.Infrastructure.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\bin\Debug\net8.0\SortedClient.Infrastructure.pdb
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.AssemblyInfo.cs
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\refint\SortedClient.Infrastructure.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\SortedClient.Infrastructure.pdb
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Infrastructure\obj\Debug\net8.0\ref\SortedClient.Infrastructure.dll

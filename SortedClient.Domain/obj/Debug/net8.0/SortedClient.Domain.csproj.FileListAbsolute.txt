@@ -1,0 +1,12 @@
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\bin\Debug\net8.0\SortedClient.Domain.deps.json
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\bin\Debug\net8.0\SortedClient.Domain.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\bin\Debug\net8.0\SortedClient.Domain.pdb
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.AssemblyInfoInputs.cache
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.AssemblyInfo.cs
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\refint\SortedClient.Domain.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.pdb
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\ref\SortedClient.Domain.dll
+C:\Users\Karen Lopez\Documents\My Docs\Project\SortedClient.Api\SortedClient.Domain\obj\Debug\net8.0\SortedClient.Domain.csproj.AssemblyReference.cache
